@@ -10,27 +10,31 @@
     <title>Create account step 1</title>
 </head>
 <body class="bg-black text-white">
-    <main class="md:p-40 flex justify-center items-center align-middle h-screen">
-        <section id="loginScreen" class="md:flex md:flex-row md:items-center md:gap-24">
-            <section id="leftScreen" class=" md:flex md:flex-row md:justify-center md:items-end md:gap-2px">
-                      <img src="../../public/images/100.svg"  alt="" class="md:w-28-rem md:h-12-rem">
-                      <img src="../../public/images/x.svg"  alt="" class="md:w-32 md:h-36">
+    <main class="flex justify-center md:items-center md:align-middle md:p-40 h-screen shrink-0">
+        <section id="loginScreen" class="flex flex-col md:flex-row md:items-center gap-24">
+            <section id="leftScreen" class="flex flex-row px-4 py-3 justify-center items-center gap-32 md:items-end md:gap-2px">
+                <section id="innerContainer" class="flex justify-center items-end gap-1">
+                    <img src="../../public/images/100.svg"  alt="" class="w-10 md:w-28-rem md:h-12-rem">
+                    <img src="../../public/images/x.svg"  alt="" class="w-3 md:w-32 md:h-36">
+                </section>
             </section>
-            <section id="rightScreen" class="md:flex md:py-0 md:px-7 md:flex-col md:items-start md:gap-10">
-                <section class="md:flex md:flex-col md:items-start md:gap-3">
-                    <h1 class="md:text-5xl md:font-bold md:text-neutral-50 ">Happening now</h1>
-                    <h2 class="md:text-2xl md:font-bold md:text-neutral-50">Join today.</h2>
+            <section id="rightScreen" class="flex py-0 px-7 flex-col items-start gap-10">
+                <section class="flex flex-col items-start gap-3 self-stretch">
+                    <h1 class="text-3xl md:text-5xl font-bold md:text-neutral-50 ">Happening now</h1>
+                    <h2 class="text-base font-medium md:text-2xl md:font-bold md:text-neutral-50">Join today.</h2>
                 </section>
-                <button class="md:w-80 md:py-2 md:px-6 md:bg-twitter-neutral-50 md:backdrop-blur-xl md:shadow-twitter-button-shadow md:rounded-twitter-rounded md:text-base md:font-inter md:font-bold md:text-black md:hover:bg-twitter-neutral-200">Create account
+                <button class="flex justify-center items-center gap-3 self-stretch md:w-80 py-2 px-6 bg-twitter-neutral-50 md:backdrop-blur-xl shadow-twitter-button-shadow rounded-twitter-rounded md:text-base font-bold text-black hover:bg-twitter-neutral-200">Create account
                 </button>
-                <section class="md:flex md:justify-center md:items-center md:gap-1 md:self-stretch">
-                    <hr class="md:w-44 md:h-1px md:bg-neutral-700">
-                    <span class="md:text-center md:text-base md:font-normal md:text-twitter-neutral-50">or</span>
-                    <hr class="md:w-44 md:h-1px md:bg-neutral-700">
+                <section class="flex justify-center items-center gap-1 self-stretch">
+                    <hr class="w-36 md:w-44 h-1px bg-neutral-700">
+                    <span class="text-center text-base font-normal text-twitter-neutral-50">or</span>
+                    <hr class="w-36 md:w-44 h-1px bg-neutral-700">
                 </section>
-                <h2 class="md:text-xl md:font-normal md:text-neutral-50">Already have an account?</h2>
-                <button class="md:w-80 md:py-2 md:px-6 md:border md:border-twitter-button-stroke md:backdrop-blur-xl md:shadow-twitter-button-shadow md:rounded-twitter-rounded md:text-base md:font-inter md:font-bold md:text-twitter-blue-default ">Sign up
-                </button>
+                <section class="flex flex-col items-start gap-5 self-stretch">
+                    <h2 class="text-base md:text-xl font-normal text-neutral-50">Already have an account?</h2>
+                    <button class=" flex justify-center items-center gap-3 self-stretch md:w-80 py-2 px-6 border border-twitter-button-stroke backdrop-blur-xl shadow-twitter-button-shadow rounded-twitter-rounded text-base font-inter font-bold text-twitter-blue-default ">Sign up
+                    </button>
+                </section>
             </section>
         </section>
     </main> 
