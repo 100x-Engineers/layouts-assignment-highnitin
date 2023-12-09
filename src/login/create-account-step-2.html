@@ -9,7 +9,133 @@
         <link href="../../dist/output.css" rel="stylesheet">
     <title>Create account step 1</title>
 </head>
-<body>
-    <h1>Testing</h1>
+<body class="text-neutral-50 bg-black font-inter font-inter">
+    <main class="">
+        <section id="step1" class="flex w-24-rem h-51.5-rem pt-0 px-4 pb-5 flex-col items-start gap-3 shrink-0 rounded-2xl">
+            
+            <!-- This is 1st Section in Step 2 - Login Form (current page) -->
+            <section id="stepCount" class="flex py-3 px-0 items-center gap-5 self-stretch">
+                <img src="../../public/images/cancel.svg" alt="" class="w-6">
+                <span class="text-sm font-bold text-neutral-50">Step 1 of 4</span>
+            </section>
+            
+            <!-- This is 2nd Section in Step 2 - Login Form (current page) -->
+            <section id="stepForm" class="flex flex-col items-start gap-5 self-stretch">
+                <!-- this section is divided into two part - heading and another section -->
+                <!-- heading for the section -->
+                <h1 class="font-inter text-xl font-bold">Create your account</h1>
+                
+                <!-- section for the form -->
+                <section id="stepFormInternal" class="flex flex-col items-center gap-10 self-stretch">
+                    <!-- Enter Name - This section accepts the name -->
+                    <!-- this section is divided into two section - one to take the input other to showcase the count of character -->
+                    <section class="flex flex-col items-center gap-2 self-stretch group relative">
+                        <section class="flex flex-col items-center self-stretch">
+                            <section class="flex py-3 px-3 items-center gap-0.6rem self-stretch border border-neutral-500 rounded relative group focus-within:border-twitter-blue-default">
+                                <!-- section for input box -->
+                                <section id="insideIconText" class="flex flex-row justify-between items-center w-full">
+                                    <input type="text" placeholder="HighNitin"
+                                        class="bg-black focus-within:outline-none text-twitter-neutral-50 text-base w-full placeholder:text-neutral-400">
+                                    <img src="../../public/images/correct.svg" alt="" class="hidden group-focus-within:inline">
+                                </section>
+                                <!-- section for text above input box -->
+                                <section id="insideLegendText" class="absolute -top-2">        
+                                    <legend
+                                    class="flex w-16 px-1 justify-center items-center gap-3 bg-black text-sm font-medium text-neutral-500 group-focus-within:text-twitter-blue-default">
+                                    Name
+                                </legend>
+                                 </section>
+                            </section>
+                        </section>
+                        <span id="characterCountForName" class=" text-neutral-500 absolute top-14 right-2 hidden group-focus-within:inline-block">7/12</span>
+                    </section>
+
+                    <!-- Enter Email - This section accepts the email  -->
+                    <section class="flex flex-col items-center self-stretch">
+                        <section class="flex py-3 px-3 items-center gap-0.6rem self-stretch border border-neutral-500 rounded relative group focus-within:border-twitter-blue-default">
+                            <!-- section for email input box -->
+                            <section id="insideIconText" class="flex flex-row justify-between items-center w-full">
+                                <input type="text" placeholder="Email"
+                                    class="bg-black focus-within:outline-none text-twitter-neutral-50 text-base w-full placeholder:text-neutral-400">
+                            </section>
+                            <!-- section for text above email input box -->
+                            <section id="insideLegendText" class="absolute -top-2">        
+                                <legend
+                                class="flex w-16 px-1 justify-center items-center gap-3 bg-black text-sm font-medium text-neutral-500 group-focus-within:text-twitter-blue-default">
+                                Email
+                            </legend>
+                             </section>
+                        </section>
+                    </section>
+
+                    <!-- Date of birth conscent -->
+                    <section class="flex flex-col items-start gap-2 self-stretch">
+                        <span class="text-base font-bold text-neutral-50">Date of birth</span>
+                        <span class="text-sm font-normal text-twitter-secondary">This will not be shown publicly. Confirm your own age, even if this account is for a business, a pet, or something else.</span>
+                    </section>
+
+                    <!-- Date of birth input form -->
+
+                    <section class="flex flex-col items-center self-stretch">
+                        <section class="flex py-3 px-3 items-center gap-0.6rem self-stretch border border-neutral-500 rounded relative group focus-within:border-twitter-blue-default">
+                            <!-- section for DOB input box -->
+                            <section id="insideDOBDate" class="flex flex-row justify-between items-center w-full">
+                                    <select name="" class="bg-black focus-within:outline-none text-twitter-neutral-50 text-base w-full placeholder:text-neutral-400 focus-within:border-blue-500">
+                                        <option value=""></option>
+                                        <option value="">1</option>
+                                        <option value="">2</option>
+                                        <option value="">3</option>
+                                        <option value="">4</option>
+                                        <option value="">5</option>
+                                        <option value="">6</option>
+                                        <option value="">7</option>
+                                        <option value="">8</option>
+                                        <option value="">9</option>
+                                        <option value="">10</option>
+                                        <option value="">11</option>
+                                        <option value="">12</option>
+                                        <option value="">13</option>
+                                        <option value="">14</option>
+                                        <option value="">15</option>
+                                        <option value="">16</option>
+                                        <option value="">17</option>
+                                        <option value="">18</option>
+                                        <option value="">19</option>
+                                        <option value="">20</option>
+                                        <option value="">21</option>
+                                        <option value="">22</option>
+                                        <option value="">23</option>
+                                        <option value="">24</option>
+                                        <option value="">25</option>
+                                        <option value="">26</option>
+                                        <option value="">27</option>
+                                        <option value="">28</option>
+                                        <option value="">29</option>
+                                        <option value="">30</option>
+                                        <option value="">31</option>
+                                      </select>
+                                    <!-- <img src="../../public/images/chevron-down.svg" alt=""> -->
+                            </section>
+                            <!-- section for text above email input box -->
+                            <section id="insideDOBLegendText" class="absolute -top-2">        
+                                <legend
+                                class="flex w-16 px-1 justify-center items-center gap-3 bg-black text-sm font-medium text-neutral-500 group-focus-within:text-twitter-blue-default">
+                                Date
+                            </legend>
+                             </section>
+                        </section>
+                    </section>
+
+                </section>
+            </section>
+            <!-- This is 3rd Section in Step 2 - Login Form (current page) -->
+            <section id="stepButton" class="flex pt-20 px-5 pb-0 justify-end items-center gap-2 self-stretch">
+                <a href="../login/create-account-step-3.html" class="flex py-3 px-6 justify-center items-center gap-2 self-stretch bg-twitter-neutral-500 backdrop-blur-xl shadow-twitter-button-shadow rounded-twitter-rounded">
+                    <span class="text-base font-inter font-bold text-black">Create account
+                    </span>
+                </a>
+            </section>
+         </section>
+    </main> 
 </body>
 </html>

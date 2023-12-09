@@ -22,6 +22,7 @@ module.exports = {
         "twitter-neutral-800": "#262626",
         "twitter-neutral-900": "#171717",
         "twitter-neutral-950": "#F9F9F9",
+        "twitter-secondary": "#FFFFFF99",
       },
       fontSize: {
         "twitter-size-10px": "10",
@@ -39,6 +40,8 @@ module.exports = {
         "twitter-rounded":"4.0625rem",
         "twitter-less-rounded":"1.875rem",
         "twitter-more-rounded":"624.9375rem",
+        "12-rem":"12rem",
+
       },
       fontFamily:{
         "inter":'Inter',
@@ -46,7 +49,12 @@ module.exports = {
       },
       width:{
         "37-rem":"37.375rem",
+        "32-rem":"32rem",
+        "30-rem":"30rem",
         "28-rem":"28.4375rem",
+        "27-rem":"27rem",
+        "24-rem":"24.375rem",
+        "22.5-rem":"22.5rem",
         "10vw":"10vw",
         "20vw":"20vw",
         "30vw":"30vw",
@@ -60,6 +68,8 @@ module.exports = {
       height:{
         "1px":"1px",
         "12-rem":"12.4375rem",
+        "22-rem":"22rem",
+        "51.5-rem":"51.5rem",
         "30vh":"30vh",
         "40vh":"40vh",
         "50vh":"50vh",
@@ -73,13 +83,14 @@ module.exports = {
       },
       gap:{
         "2px":"2px",
+        "0.6rem":"0.6rem",
       },
       padding:{
         "236px":"236px",
         "161.9":"161.936px",
         "20per":"20%",
       },
-
+      borderColor: ['focus'],
     },
   },
   plugins: [],
