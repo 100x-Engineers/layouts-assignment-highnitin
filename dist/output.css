@@ -1040,6 +1040,11 @@ video {
   border-color: rgb(29 155 240 / var(--tw-border-opacity));
 }
 
+.focus-within\:text-twitter-blue-default:focus-within {
+  --tw-text-opacity: 1;
+  color: rgb(29 155 240 / var(--tw-text-opacity));
+}
+
 .focus-within\:outline-none:focus-within {
   outline: 2px solid transparent;
   outline-offset: 2px;
