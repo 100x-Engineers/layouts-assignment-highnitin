@@ -90,7 +90,9 @@ module.exports = {
         "161.9":"161.936px",
         "20per":"20%",
       },
-      borderColor: ['focus'],
+      spacing:{  
+        "0.6-rem":"0.6rem",
+      }
     },
   },
   plugins: [],
