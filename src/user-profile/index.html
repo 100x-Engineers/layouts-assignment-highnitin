@@ -1,15 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+<head> 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <link href="../../dist/output.css" rel="stylesheet">
-    <title>✨ User Profile - 100X ✨</title>
+    <title>✨ User Profile Screen - 100X Blogging App ✨</title>
 </head>
-<body>
-    <h1>This page is for user profile</h1>
+<body class="bg-black text-white">
+    <nav class="p-4 flex justify-between align-middle border-b-2 border-twitter-button-stroke">
+        <span class="flex text-lg font-bold align-middle content-center items-center"><a href="../index.html">100X App</a></span>
+        <span class="hidden md:flex md:visible">
+        <ul class="flex justify-center align-middle content-center items-center space-x-10 mx-2">
+            <li class="hover:border-b-2 border-gray-400"><a href="#">Home</a></li>
+            <li class="hover:border-b-2 border-gray-400"><a href="http://linkedin.com/in/highnitin" target="_blank">About Me</a></li>
+            <li class="hover:border-b-2 border-gray-400"><a href="http://linkedin.com/in/highnitin" target="_blank">Connect</a></li>
+                </ul></span>
+        <span class="flex justify-center items-center content-center">
+            <a href="http://linkedin.com/in/highnitin" target="_blank">
+            <button class="bg-twitter-blue-default hover:bg-twitter-blue-hover py-2 px-6 rounded-twitter-rounded">
+                   Get High, together!!!
+                </button>
+            </a>
+        </span>
+    </nav>
+    <main class="flex flex-col justify-center align-middle items-center py-20per h-80vh">
+
+            <h1 class="text-lg m-3 md:text-2xl">User Profile Screen for 100x Blogging App</h1>
+        <section id="buttonContainer" class="flex flex-col justify-center md:flex md:flex-row md:flex-wrap align-middle items-center">
+
+            <a href="../user-profile/profile.html">
+                <button class="m-2 py-2 px-6 bg-twitter-blue-default backdrop-blur-xl shadow-twitter-button-shadow rounded-twitter-rounded text-base font-inter  text-twitter-neutral-50 hover:bg-twitter-blue-hover hover:text-neutral-50 w-60vw md:w-30vw lg:w-10vw">Profile
+                </button>
+            </a>
+            <a href="../user-profile/edit-profile.html">
+                <button class="m-2 py-2 px-6 bg-twitter-blue-default backdrop-blur-xl shadow-twitter-button-shadow rounded-twitter-rounded text-base font-inter  text-twitter-neutral-50 hover:bg-twitter-blue-hover hover:text-neutral-50 w-60vw md:w-30vw lg:w-10vw">Edit Profile
+                </button>
+            </a>
+            
+        </section>
+        <section id="navigationButton" class="mx-2 my-2 flex justify-between items-center">
+            <a href="../compose-tweet/index.html">
+            <pre class="bg-twitter-blue-default px-5"><</pre>
+            </a>
+           
+            <a href="../user-profile/index.html">
+            <pre class="bg-twitter-blue-default px-5">></pre>
+            </a>
+        </section>
+    </main>
+
+    <footer class="p-4 text-center border-t-2 border-twitter-button-stroke w-screen fixed bottom-0">
+      <span class="pt-2">🚀 Crafted with curiosity | HighNitin ©2023 ✨</span>
+    </footer>
 </body>
 </html>
