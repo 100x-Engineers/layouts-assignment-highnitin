@@ -1309,6 +1309,10 @@ video {
     visibility: visible;
   }
 
+  .md\:right-\[37\%\] {
+    right: 37%;
+  }
+
   .md\:flex {
     display: flex;
   }
