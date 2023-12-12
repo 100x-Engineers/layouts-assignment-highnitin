@@ -1,19 +1,802 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-        rel="stylesheet">
-    <link href="../../dist/output.css" rel="stylesheet">
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link href="../../dist/output.css" rel="stylesheet" />
     <title>Home Feed 🚀 100X Blogging App</title>
-</head>
+  </head>
 
-<body class="text-neutral-50 bg-black font-inter">
+  <body class="text-neutral-50 bg-black font-inter">
+    <main class="flex justify-center">
+      <section
+        id="homeFeed"
+        class="w-24-rem shrink-0 border border-neutral-700 relative"
+      >
+        <!-- Section for logo and avatar -->
+        <section
+          id="topLogoBar"
+          class="flex py-3 px-4 items-center justify-stretch gap-32 bg-black border-b border-neutral-700 z-10"
+        >
+          <img
+            src="../../public/images/user-avatar.png"
+            alt=""
+            class="w-9 rounded-12-rem"
+          />
+          <section id="logo" class="flex justify-center items-end gap-1">
+            <img src="../../public/images/100.svg" alt="" />
+            <img src="../../public/images/x.svg" alt="" />
+          </section>
+        </section>
+
+        <!-- Section for home feed and tweets -->
+        <section id="tweetArea" class="flex py-0 px-0.06 flex-col items-start">
+          <!-- Section - For you & Following Button -->
+          <section
+            id="forYouMenu"
+            class="flex pt-5 pb-0 px-8 justify-center gap-40 self-stretch border-b border-neutral-700"
+          >
+            <!-- For you button -->
+
+            <section
+              class="flex flex-col justify-center items-center gap-4 w-full"
+            >
+              <button
+                class="flex flex-col justify-center items-center gap-4 hover:border-b-2 border-twitter-blue-default p-1"
+              >
+                <span
+                  class="text-base font-inter font-medium text-neutral-50 hover:text-neutral-400 pb-3"
+                >
+                  For You</span
+                >
+              </button>
+            </section>
+
+            <!-- Following button -->
+
+            <section
+              class="flex flex-col justify-center items-center gap-4 w-full"
+            >
+              <button
+                class="flex flex-col justify-center items-center gap-4 hover:border-b-2 border-twitter-blue-default p-1"
+              >
+                <span
+                  class="text-base font-inter font-medium text-neutral-50 hover:text-neutral-400 pb-3"
+                  >Following</span
+                >
+              </button>
+            </section>
+          </section>
+
+          <!-- Section - Tweets -->
+          <section
+            class="flex flex-col items-center self-stretch border-b border-neutral-700 relative"
+          >
+            <!-- Tweet 1 -->
+            <section
+              class="flex py-2 px-4 items-start gap-4 border-b border-b-neutral-700 self-stretch"
+            >
+              <!-- Left Side of the tweet -->
+              <img
+                src="../../public/images/user-avatar-1.png"
+                alt=""
+                class="w-12 rounded-12-rem bg-twitter-searchbar-fill"
+              />
+
+              <!-- Right Side of the tweet -->
+              <section class="flex flex-col items-start gap-2 w-full">
+                <!-- Text Area of the tweet -->
+                <section class="flex flex-col items-start gap-1 self-stretch">
+                  <section class="flex items-center gap-1 self-stretch">
+                    <!-- Userinfo -->
+                    <section class="flex items-center gap-2">
+                      <span
+                        class="font-inter text-base font-medium text-neutral-50"
+                        >Name</span
+                      >
+                      <span
+                        class="font-inter text-base font-normal text-neutral-500"
+                        >@handle • 32m</span
+                      >
+                    </section>
+                  </section>
+                  <span class="font-inter text-base font-normal text-neutral-50"
+                    >Don't wish for it, work for it.
+                  </span>
+                </section>
+                <!-- User action - comment, retweet, like,analytics, share -->
+                <section
+                  class="flex py-3 px-0 justify-between items-center self-stretch"
+                >
+                  <!-- section for comment icon -->
+                  <section class="flex justify-center items-center gap-1 group">
+                    <img
+                      src="../../public/images/comment-sv.svg"
+                      alt=""
+                      class="w-4 stroke-neutral-500"
+                      style="stroke-width: 1.5px"
+                    />
+                    <span
+                      class="font-inter text-sm font-normal text-neutral-500 group-hover:text-neutral-50 transition-colors duration-300"
+                      >11</span
+                    >
+                  </section>
+                  <!-- section for rwtweet icon -->
+
+                  <section class="flex justify-center items-center gap-1 group">
+                    <img
+                      src="../../public/images/retweet-black.svg"
+                      alt=""
+                      class="w-4 stroke-neutral-500 group-hover:hidden"
+                      style="stroke-width: 1.5px"
+                    />
+                    <img
+                      src="../../public/images/retweet-sv.svg"
+                      alt=""
+                      class="w-4 stroke-neutral-500 hidden group-hover:inline-block transition-colors duration-300"
+                      style="stroke-width: 1.5px"
+                    />
+                    <span
+                      class="font-inter text-sm font-normal text-neutral-500 group-hover:text-neutral-50 transition-colors duration-300"
+                      >270</span
+                    >
+                  </section>
+
+                  <!-- section for like icon -->
+                  <section class="flex justify-center items-center gap-1 group">
+                    <img
+                      src="../../public/images/heart-black.svg"
+                      alt=""
+                      class="w-4 stroke-neutral-500 group-hover:hidden"
+                      style="stroke-width: 1.5px"
+                    />
+                    <img
+                      src="../../public/images/heart-sv.svg"
+                      alt=""
+                      class="w-4 stroke-neutral-500 hidden group-hover:inline-block transition-colors duration-300"
+                      style="stroke-width: 1.5px"
+                    />
+                    <span
+                      class="font-inter text-sm font-normal text-neutral-500 group-hover:text-neutral-50 transition-colors duration-300"
+                      >1869</span
+                    >
+                  </section>
+
+                  <!-- section for analytics icon -->
+                  <section class="flex justify-center items-center gap-1 group">
+                    <img
+                      src="../../public/images/analytics.svg"
+                      alt=""
+                      class="w-3 stroke-neutral-500 group-hover:hidden"
+                      style="stroke-width: 1.5px"
+                    />
+                    <img
+                      src="../../public/images/reach-sv.svg"
+                      alt=""
+                      class="w-3 stroke-neutral-500 hidden group-hover:inline-block transition-colors duration-300"
+                      style="stroke-width: 1.5px"
+                    />
+                    <span
+                      class="font-inter text-sm font-normal text-neutral-500 group-hover:text-neutral-50 transition-colors duration-300"
+                      >99.6k</span
+                    >
+                  </section>
+
+                  <!-- section for share icon -->
+                  <section class="flex justify-center items-center gap-1 group">
+                    <img
+                      src="../../public/images/share-black.svg"
+                      alt=""
+                      class="w-4 stroke-neutral-500 group-hover:hidden transition-colors duration-300"
+                      style="stroke-width: 1.5px"
+                    />
+                    <img
+                      src="../../public/images/share-sv.svg"
+                      alt=""
+                      class="w-4 stroke-neutral-500 hidden group-hover:inline-block transition-colors duration-300"
+                      style="stroke-width: 1.5px"
+                    />
+                  </section>
+                </section>
+              </section>
+            </section>
+
+            <!-- Tweet 2 -->
+            <section
+              class="flex py-2 px-4 items-start gap-4 border-b border-b-neutral-700 self-stretch"
+            >
+              <!-- Left Side of the tweet -->
+              <img
+                src="../../public/images/user-avatar-2.png"
+                alt=""
+                class="w-12 rounded-12-rem bg-twitter-searchbar-fill"
+              />
+
+              <!-- Right Side of the tweet -->
+              <section class="flex flex-col items-start gap-2 w-full">
+                <!-- Text Area of the tweet -->
+                <section class="flex flex-col items-start gap-1 self-stretch">
+                  <section class="flex items-center gap-1 self-stretch">
+                    <!-- Userinfo -->
+                    <section class="flex items-center gap-2">
+                      <span
+                        class="font-inter text-base font-medium text-neutral-50"
+                        >Name</span
+                      >
+                      <span
+                        class="font-inter text-base font-normal text-neutral-500"
+                        >@handle • 10h</span
+                      >
+                    </section>
+                  </section>
+                  <span class="font-inter text-base font-normal text-neutral-50"
+                    >i've seen people absolutely despise auto layout in figma
+                    but i think it's a lifesaver-1. tidies everything nice and
+                    compact2. makes responsive design effortless3. no manual
+                    adjustments post any tweaks4. saves a tonnn of timesorry,
+                    but will stay an auto layout maxi all life.
+                  </span>
+                </section>
+                <!-- User action - comment, retweet, like,analytics, share -->
+                <section
+                  class="flex py-3 px-0 justify-between items-center self-stretch"
+                >
+                  <!-- section for comment icon -->
+                  <section class="flex justify-center items-center gap-1 group">
+                    <img
+                      src="../../public/images/comment-sv.svg"
+                      alt=""
+                      class="w-4 stroke-neutral-500"
+                      style="stroke-width: 1.5px"
+                    />
+                    <span
+                      class="font-inter text-sm font-normal text-neutral-500 group-hover:text-neutral-50 transition-colors duration-300"
+                      >11</span
+                    >
+                  </section>
+                  <!-- section for rwtweet icon -->
+
+                  <section class="flex justify-center items-center gap-1 group">
+                    <img
+                      src="../../public/images/retweet-black.svg"
+                      alt=""
+                      class="w-4 stroke-neutral-500 group-hover:hidden"
+                      style="stroke-width: 1.5px"
+                    />
+                    <img
+                      src="../../public/images/retweet-sv.svg"
+                      alt=""
+                      class="w-4 stroke-neutral-500 hidden group-hover:inline-block transition-colors duration-300"
+                      style="stroke-width: 1.5px"
+                    />
+                    <span
+                      class="font-inter text-sm font-normal text-neutral-500 group-hover:text-neutral-50 transition-colors duration-300"
+                      >270</span
+                    >
+                  </section>
+
+                  <!-- section for like icon -->
+                  <section class="flex justify-center items-center gap-1 group">
+                    <img
+                      src="../../public/images/heart-black.svg"
+                      alt=""
+                      class="w-4 stroke-neutral-500 group-hover:hidden"
+                      style="stroke-width: 1.5px"
+                    />
+                    <img
+                      src="../../public/images/heart-sv.svg"
+                      alt=""
+                      class="w-4 stroke-neutral-500 hidden group-hover:inline-block transition-colors duration-300"
+                      style="stroke-width: 1.5px"
+                    />
+                    <span
+                      class="font-inter text-sm font-normal text-neutral-500 group-hover:text-neutral-50 transition-colors duration-300"
+                      >1869</span
+                    >
+                  </section>
+
+                  <!-- section for analytics icon -->
+                  <section class="flex justify-center items-center gap-1 group">
+                    <img
+                      src="../../public/images/analytics.svg"
+                      alt=""
+                      class="w-3 stroke-neutral-500 group-hover:hidden"
+                      style="stroke-width: 1.5px"
+                    />
+                    <img
+                      src="../../public/images/reach-sv.svg"
+                      alt=""
+                      class="w-3 stroke-neutral-500 hidden group-hover:inline-block transition-colors duration-300"
+                      style="stroke-width: 1.5px"
+                    />
+                    <span
+                      class="font-inter text-sm font-normal text-neutral-500 group-hover:text-neutral-50 transition-colors duration-300"
+                      >99.6k</span
+                    >
+                  </section>
+
+                  <!-- section for share icon -->
+                  <section class="flex justify-center items-center gap-1 group">
+                    <img
+                      src="../../public/images/share-black.svg"
+                      alt=""
+                      class="w-4 stroke-neutral-500 group-hover:hidden transition-colors duration-300"
+                      style="stroke-width: 1.5px"
+                    />
+                    <img
+                      src="../../public/images/share-sv.svg"
+                      alt=""
+                      class="w-4 stroke-neutral-500 hidden group-hover:inline-block transition-colors duration-300"
+                      style="stroke-width: 1.5px"
+                    />
+                  </section>
+                </section>
+              </section>
+            </section>
+
+            <!-- Tweet 3 -->
+            <section
+              class="flex py-2 px-4 items-start gap-4 border-b border-b-neutral-700 self-stretch"
+            >
+              <!-- Left Side of the tweet -->
+              <img
+                src="../../public/images/user-avatar-1.png"
+                alt=""
+                class="w-12 h-12 rounded-12.5-rem bg-cover bg-no-repeat bg-twitter-searchbar-fill"
+              />
+
+              <!-- Right Side of the tweet -->
+              <section class="flex flex-col items-start gap-2 w-full">
+                <!-- Text Area of the tweet -->
+                <section class="flex flex-col items-start gap-1 self-stretch">
+                  <section class="flex items-center gap-1 self-stretch">
+                    <!-- Userinfo -->
+                    <section class="flex items-center gap-2">
+                      <span
+                        class="font-inter text-base font-medium text-neutral-50"
+                        >Name</span
+                      >
+                      <span
+                        class="font-inter text-base font-normal text-neutral-500"
+                        >@handle • 32m</span
+                      >
+                    </section>
+                  </section>
+                  <span class="font-inter text-base font-normal text-neutral-50"
+                    >Writing gets easier after the first sentence.Lifting gets
+                    easier after the first set.People think and think and think
+                    until they finally decide to act. Their attention shifts
+                    from internal to external, and the difficulty they created
+                    in their mind vanishes.
+                  </span>
+                </section>
+                <!-- User action - comment, retweet, like,analytics, share -->
+                <section
+                  class="flex py-3 px-0 justify-between items-center self-stretch"
+                >
+                  <!-- section for comment icon -->
+                  <section class="flex justify-center items-center gap-1 group">
+                    <img
+                      src="../../public/images/comment-sv.svg"
+                      alt=""
+                      class="w-4 stroke-neutral-500"
+                      style="stroke-width: 1.5px"
+                    />
+                    <span
+                      class="font-inter text-sm font-normal text-neutral-500 group-hover:text-neutral-50 transition-colors duration-300"
+                      >11</span
+                    >
+                  </section>
+                  <!-- section for rwtweet icon -->
+
+                  <section class="flex justify-center items-center gap-1 group">
+                    <img
+                      src="../../public/images/retweet-black.svg"
+                      alt=""
+                      class="w-4 stroke-neutral-500 group-hover:hidden"
+                      style="stroke-width: 1.5px"
+                    />
+                    <img
+                      src="../../public/images/retweet-sv.svg"
+                      alt=""
+                      class="w-4 stroke-neutral-500 hidden group-hover:inline-block transition-colors duration-300"
+                      style="stroke-width: 1.5px"
+                    />
+                    <span
+                      class="font-inter text-sm font-normal text-neutral-500 group-hover:text-neutral-50 transition-colors duration-300"
+                      >270</span
+                    >
+                  </section>
+
+                  <!-- section for like icon -->
+                  <section class="flex justify-center items-center gap-1 group">
+                    <img
+                      src="../../public/images/heart-black.svg"
+                      alt=""
+                      class="w-4 stroke-neutral-500 group-hover:hidden"
+                      style="stroke-width: 1.5px"
+                    />
+                    <img
+                      src="../../public/images/heart-sv.svg"
+                      alt=""
+                      class="w-4 stroke-neutral-500 hidden group-hover:inline-block transition-colors duration-300"
+                      style="stroke-width: 1.5px"
+                    />
+                    <span
+                      class="font-inter text-sm font-normal text-neutral-500 group-hover:text-neutral-50 transition-colors duration-300"
+                      >1869</span
+                    >
+                  </section>
+
+                  <!-- section for analytics icon -->
+                  <section class="flex justify-center items-center gap-1 group">
+                    <img
+                      src="../../public/images/analytics.svg"
+                      alt=""
+                      class="w-3 stroke-neutral-500 group-hover:hidden"
+                      style="stroke-width: 1.5px"
+                    />
+                    <img
+                      src="../../public/images/reach-sv.svg"
+                      alt=""
+                      class="w-3 stroke-neutral-500 hidden group-hover:inline-block transition-colors duration-300"
+                      style="stroke-width: 1.5px"
+                    />
+                    <span
+                      class="font-inter text-sm font-normal text-neutral-500 group-hover:text-neutral-50 transition-colors duration-300"
+                      >99.6k</span
+                    >
+                  </section>
+
+                  <!-- section for share icon -->
+                  <section class="flex justify-center items-center gap-1 group">
+                    <img
+                      src="../../public/images/share-black.svg"
+                      alt=""
+                      class="w-4 stroke-neutral-500 group-hover:hidden transition-colors duration-300"
+                      style="stroke-width: 1.5px"
+                    />
+                    <img
+                      src="../../public/images/share-sv.svg"
+                      alt=""
+                      class="w-4 stroke-neutral-500 hidden group-hover:inline-block transition-colors duration-300"
+                      style="stroke-width: 1.5px"
+                    />
+                  </section>
+                </section>
+              </section>
+            </section>
+
+            <!-- Tweet 4 -->
+            <section
+              class="flex py-2 px-4 items-start gap-4 border-b border-b-neutral-700 self-stretch"
+            >
+              <!-- Left Side of the tweet -->
+              <img
+                src="../../public/images/user-avatar-2.png"
+                alt=""
+                class="w-12 rounded-12-rem bg-twitter-searchbar-fill"
+              />
+
+              <!-- Right Side of the tweet -->
+              <section class="flex flex-col items-start gap-2 w-full">
+                <!-- Text Area of the tweet -->
+                <section class="flex flex-col items-start gap-1 self-stretch">
+                  <section class="flex items-center gap-1 self-stretch">
+                    <!-- Userinfo -->
+                    <section class="flex items-center gap-2">
+                      <span
+                        class="font-inter text-base font-medium text-neutral-50"
+                        >Name</span
+                      >
+                      <span
+                        class="font-inter text-base font-normal text-neutral-500"
+                        >@handle • 10h</span
+                      >
+                    </section>
+                  </section>
+                  <span class="font-inter text-base font-normal text-neutral-50"
+                    >I'm entering my relaxation era.
+                  </span>
+                </section>
+                <!-- User action - comment, retweet, like,analytics, share -->
+                <section
+                  class="flex py-3 px-0 justify-between items-center self-stretch"
+                >
+                  <!-- section for comment icon -->
+                  <section class="flex justify-center items-center gap-1 group">
+                    <img
+                      src="../../public/images/comment-sv.svg"
+                      alt=""
+                      class="w-4 stroke-neutral-500"
+                      style="stroke-width: 1.5px"
+                    />
+                    <span
+                      class="font-inter text-sm font-normal text-neutral-500 group-hover:text-neutral-50 transition-colors duration-300"
+                      >11</span
+                    >
+                  </section>
+                  <!-- section for rwtweet icon -->
+
+                  <section class="flex justify-center items-center gap-1 group">
+                    <img
+                      src="../../public/images/retweet-black.svg"
+                      alt=""
+                      class="w-4 stroke-neutral-500 group-hover:hidden"
+                      style="stroke-width: 1.5px"
+                    />
+                    <img
+                      src="../../public/images/retweet-sv.svg"
+                      alt=""
+                      class="w-4 stroke-neutral-500 hidden group-hover:inline-block transition-colors duration-300"
+                      style="stroke-width: 1.5px"
+                    />
+                    <span
+                      class="font-inter text-sm font-normal text-neutral-500 group-hover:text-neutral-50 transition-colors duration-300"
+                      >270</span
+                    >
+                  </section>
+
+                  <!-- section for like icon -->
+                  <section class="flex justify-center items-center gap-1 group">
+                    <img
+                      src="../../public/images/heart-black.svg"
+                      alt=""
+                      class="w-4 stroke-neutral-500 group-hover:hidden"
+                      style="stroke-width: 1.5px"
+                    />
+                    <img
+                      src="../../public/images/heart-sv.svg"
+                      alt=""
+                      class="w-4 stroke-neutral-500 hidden group-hover:inline-block transition-colors duration-300"
+                      style="stroke-width: 1.5px"
+                    />
+                    <span
+                      class="font-inter text-sm font-normal text-neutral-500 group-hover:text-neutral-50 transition-colors duration-300"
+                      >1869</span
+                    >
+                  </section>
+
+                  <!-- section for analytics icon -->
+                  <section class="flex justify-center items-center gap-1 group">
+                    <img
+                      src="../../public/images/analytics.svg"
+                      alt=""
+                      class="w-3 stroke-neutral-500 group-hover:hidden"
+                      style="stroke-width: 1.5px"
+                    />
+                    <img
+                      src="../../public/images/reach-sv.svg"
+                      alt=""
+                      class="w-3 stroke-neutral-500 hidden group-hover:inline-block transition-colors duration-300"
+                      style="stroke-width: 1.5px"
+                    />
+                    <span
+                      class="font-inter text-sm font-normal text-neutral-500 group-hover:text-neutral-50 transition-colors duration-300"
+                      >99.6k</span
+                    >
+                  </section>
+
+                  <!-- section for share icon -->
+                  <section class="flex justify-center items-center gap-1 group">
+                    <img
+                      src="../../public/images/share-black.svg"
+                      alt=""
+                      class="w-4 stroke-neutral-500 group-hover:hidden transition-colors duration-300"
+                      style="stroke-width: 1.5px"
+                    />
+                    <img
+                      src="../../public/images/share-sv.svg"
+                      alt=""
+                      class="w-4 stroke-neutral-500 hidden group-hover:inline-block transition-colors duration-300"
+                      style="stroke-width: 1.5px"
+                    />
+                  </section>
+                </section>
+              </section>
+            </section>
+
+            <!-- Tweet 5 -->
+            <section
+              class="flex py-2 px-4 items-start gap-4 border-b border-b-neutral-700 self-stretch"
+            >
+              <!-- Left Side of the tweet -->
+              <img
+                src="../../public/images/user-avatar-1.png"
+                alt=""
+                class="w-12 rounded-12-rem bg-twitter-searchbar-fill"
+              />
+
+              <!-- Right Side of the tweet -->
+              <section class="flex flex-col items-start gap-2 w-full">
+                <!-- Text Area of the tweet -->
+                <section class="flex flex-col items-start gap-1 self-stretch">
+                  <section class="flex items-center gap-1 self-stretch">
+                    <!-- Userinfo -->
+                    <section class="flex items-center gap-2">
+                      <span
+                        class="font-inter text-base font-medium text-neutral-50"
+                        >Name</span
+                      >
+                      <span
+                        class="font-inter text-base font-normal text-neutral-500"
+                        >@handle • 32m</span
+                      >
+                    </section>
+                  </section>
+                  <span class="font-inter text-base font-normal text-neutral-50"
+                    >Don't wish for it, work for it.
+                  </span>
+                </section>
+                <!-- User action - comment, retweet, like,analytics, share -->
+                <section
+                  class="flex py-3 px-0 justify-between items-center self-stretch"
+                >
+                  <!-- section for comment icon -->
+                  <section class="flex justify-center items-center gap-1 group">
+                    <img
+                      src="../../public/images/comment-sv.svg"
+                      alt=""
+                      class="w-4 stroke-neutral-500"
+                      style="stroke-width: 1.5px"
+                    />
+                    <span
+                      class="font-inter text-sm font-normal text-neutral-500 group-hover:text-neutral-50 transition-colors duration-300"
+                      >11</span
+                    >
+                  </section>
+                  <!-- section for rwtweet icon -->
+
+                  <section class="flex justify-center items-center gap-1 group">
+                    <img
+                      src="../../public/images/retweet-black.svg"
+                      alt=""
+                      class="w-4 stroke-neutral-500 group-hover:hidden"
+                      style="stroke-width: 1.5px"
+                    />
+                    <img
+                      src="../../public/images/retweet-sv.svg"
+                      alt=""
+                      class="w-4 stroke-neutral-500 hidden group-hover:inline-block transition-colors duration-300"
+                      style="stroke-width: 1.5px"
+                    />
+                    <span
+                      class="font-inter text-sm font-normal text-neutral-500 group-hover:text-neutral-50 transition-colors duration-300"
+                      >270</span
+                    >
+                  </section>
+
+                  <!-- section for like icon -->
+                  <section class="flex justify-center items-center gap-1 group">
+                    <img
+                      src="../../public/images/heart-black.svg"
+                      alt=""
+                      class="w-4 stroke-neutral-500 group-hover:hidden"
+                      style="stroke-width: 1.5px"
+                    />
+                    <img
+                      src="../../public/images/heart-sv.svg"
+                      alt=""
+                      class="w-4 stroke-neutral-500 hidden group-hover:inline-block transition-colors duration-300"
+                      style="stroke-width: 1.5px"
+                    />
+                    <span
+                      class="font-inter text-sm font-normal text-neutral-500 group-hover:text-neutral-50 transition-colors duration-300"
+                      >1869</span
+                    >
+                  </section>
+
+                  <!-- section for analytics icon -->
+                  <section class="flex justify-center items-center gap-1 group">
+                    <img
+                      src="../../public/images/analytics.svg"
+                      alt=""
+                      class="w-3 stroke-neutral-500 group-hover:hidden"
+                      style="stroke-width: 1.5px"
+                    />
+                    <img
+                      src="../../public/images/reach-sv.svg"
+                      alt=""
+                      class="w-3 stroke-neutral-500 hidden group-hover:inline-block transition-colors duration-300"
+                      style="stroke-width: 1.5px"
+                    />
+                    <span
+                      class="font-inter text-sm font-normal text-neutral-500 group-hover:text-neutral-50 transition-colors duration-300"
+                      >99.6k</span
+                    >
+                  </section>
+
+                  <!-- section for share icon -->
+                  <section class="flex justify-center items-center gap-1 group">
+                    <img
+                      src="../../public/images/share-black.svg"
+                      alt=""
+                      class="w-4 stroke-neutral-500 group-hover:hidden transition-colors duration-300"
+                      style="stroke-width: 1.5px"
+                    />
+                    <img
+                      src="../../public/images/share-sv.svg"
+                      alt=""
+                      class="w-4 stroke-neutral-500 hidden group-hover:inline-block transition-colors duration-300"
+                      style="stroke-width: 1.5px"
+                    />
+                  </section>
+                </section>
+              </section>
+            </section>
+
+            <!-- Copy to clipboard text -->
+            <section
+              class="flex py-3 px-8 justify-center items-center gap-0.6-rem absolute bottom-2 left-16 border rounded-3xl bg-twitter-searchbar-fill"
+            >
+              <span class="text-base font-normal">Copied to clipboard.</span>
+            </section>
+
+
+          </section>
+        </section>
+
+                    <!-- Section - Button -->
+                    
+                    <a href="../compose-tweet/index.html"
+                    class="flex p-4 items-start gap-0.6-rem rounded-full bg-twitter-blue-default shadow-md absolute bottom-20 right-5"
+                  >
+                    <img
+                      src="../../public/images/Add.svg"
+                      alt=""
+                      class="flex w-8 h-8 justify-center items-center"
+                    />
+                  </a>
+
+
+        <!-- Section - home / group button -->
+
+        <section
+          class="flex py-5 px-6 justify-center items-center gap-10 border-t border-neutral-800 bg-black"
+        >
+          <button class="flex justify-center items-center gap-4 p-1 group">
+            <span
+              class="text-base font-inter font-medium text-neutral-50 hover:text-neutral-400"
+            >
+              <img
+                src="../../public/images/home-icon.svg"
+                alt=""
+                class="group-hover:inline-block hidden"
+              />
+              <img
+                src="../../public/images/homeInactive.svg"
+                alt=""
+                class="group-hover:hidden"
+              />
+            </span>
+          </button>
+
+          <button class="flex justify-center items-center gap-4 p-1 group">
+            <span
+              class="text-base font-inter font-medium text-neutral-50 hover:text-neutral-400"
+            >
+              <img
+                src="../../public/images/groupActive.svg"
+                alt=""
+                class="group-hover:inline-block hidden"
+              />
+              <img
+                src="../../public/images/groupInactive.svg"
+                alt=""
+                class="group-hover:hidden"
+              />
+            </span>
+          </button>
+        </section>
+
+      </section>
+    </main>
     <nav id="navigationButton" class="mx-2 my-2 flex justify-between items-center">
         <a href="../login/create-account-step-5.html">
         <pre class="bg-twitter-blue-default px-5"><</pre>
@@ -23,60 +806,5 @@
         <pre class="bg-twitter-blue-default px-5">></pre>
         </a>
 </nav>
-    <main class="flex justify-center">
-        <section id="step3"
-            class="flex w-24-rem h-screen pt-0 px-4 pb-5 flex-col items-start gap-3 shrink-0 rounded-2xl">
-
-            <!-- This is 1st Section in Step 4 - Login Form (current page) -->
-            <section id="stepCount" class="flex py-3 px-0 items-center gap-5 self-stretch">
-                <a href="../login/create-account-step-4.html">
-                    <img src="../../public/images/cancel.svg" alt="" class="w-6">
-                </a>
-                <span class="text-sm font-bold text-neutral-50">Step 4 of 4</span>
-            </section>
-
-            <!-- This is 2nd Section in Step 4 - Login Form (current page) -->
-            <section class="flex flex-col items-start gap-3 self-stretch">
-                <section class="flex flex-col items-start gap-10 self-stretch">
-                            <!-- First Part with Heading -->
-                            <section class="flex flex-col items-start gap-2 self-stretch">
-                                <h2 class="font-inter text-xl font-bold text-neutral-50">You’ll need a password</h2>
-                                <h2 class="font-inter text-sm font-normal text-neutral-500">Make sure it’s 8 characters or more</h2>    
-                            </section>
-                            
-                            <!-- Second Part with Input Box -->
-                    <section class="flex flex-col items-end gap-3 self-stretch">
-                        <section
-                                class="flex py-3 px-3 items-center gap-0.6rem self-stretch border border-neutral-500 rounded relative group focus-within:border-twitter-blue-default">
-                                <!-- section for input box -->
-                                <section id="insideIconTextName" class="flex flex-row justify-between items-center w-full">
-                                    <input type="password" placeholder="Password"
-                                        class="bg-black focus-within:outline-none text-twitter-neutral-50 text-base w-full placeholder:text-neutral-400 m-1">
-                                    <img src="../../public/images/visible-t.svg" alt=""
-                                        class="focus-within:text-twitter-blue-default">
-                                </section>
-                                <!-- section for text above input box -->
-                                <section id="insideLegendTextName" class="flex py-0 px-1 justify-center items-center gap-0.6-rem absolute -top-0.6-rem left-3">
-                                    <legend
-                                        class="flex px-2 justify-center items-center gap-3 bg-black text-sm font-medium text-neutral-500 group-focus-within:text-twitter-blue-default">
-                                        Password
-                                    </legend>
-                                </section>
-                            </section>
-                       </section>
-                </section>
-            </section>
-
-         <!-- This is 3rd Section in Step 4 - Login Form (current page) -->
-            <section id="stepButton" class="flex mt-auto pt-20 px-5 pb-0 flex-col justify-end items-center gap-5 self-stretch">
-                <a href="../login/create-account-step-5.html"
-                    class="flex py-3 px-6 justify-center items-center gap-0.6rem bg-twitter-neutral-500 backdrop-blur-xl shadow-twitter-button-shadow rounded-twitter-rounded w-full">
-                    <span class="text-base font-inter font-bold text-black">Next
-                    </span>
-                </a>
-            </section>
-        </section>
-    </main>
-</body>
-
+  </body>
 </html>

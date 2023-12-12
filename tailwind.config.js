@@ -41,6 +41,7 @@ module.exports = {
         "twitter-less-rounded":"1.875rem",
         "twitter-more-rounded":"624.9375rem",
         "12-rem":"12rem",
+        "12.5-rem":"12.5rem",
 
       },
       fontFamily:{
@@ -70,6 +71,7 @@ module.exports = {
         "12-rem":"12.4375rem",
         "22-rem":"22rem",
         "51.5-rem":"51.5rem",
+        "54.25-rem":"54.25rem",
         "30vh":"30vh",
         "40vh":"40vh",
         "50vh":"50vh",
@@ -89,11 +91,13 @@ module.exports = {
         "236px":"236px",
         "161.9":"161.936px",
         "20per":"20%",
+        "0.06":"0.06rem",
       },
       spacing:{  
         "0.6-rem":"0.6rem",
         "0.4-rem":"0.43rem",
-      }
+      },
+
     },
   },
   plugins: [],
