@@ -14,15 +14,16 @@
   </head>
 
   <body class="text-neutral-50 bg-black font-inter">
-    <main class="flex justify-center">
-      <section
+    <main class="flex justify-center relative">
+      <!-- if the width below is changed then make sure to update the width for topLogoBar and bottom home/group button -->
+        <section
         id="homeFeed"
-        class="w-24-rem shrink-0 border border-neutral-700 relative"
+        class="flex justify-center w-24.3-rem shrink-0 border-neutral-700 relative"
       >
         <!-- Section for logo and avatar -->
         <section
           id="topLogoBar"
-          class="flex py-3 px-4 items-center justify-stretch gap-32 bg-black border-b border-neutral-700 z-10"
+          class="flex py-3 px-4 items-center justify-stretch gap-32 bg-black border-b border-neutral-700 fixed top-0 w-24-rem z-50"
         >
           <img
             src="../../public/images/user-avatar.png"
@@ -36,7 +37,7 @@
         </section>
 
         <!-- Section for home feed and tweets -->
-        <section id="tweetArea" class="flex py-0 px-0.06 flex-col items-start">
+        <section id="tweetArea" class="flex py-0 px-0.06 flex-col items-start absolute top-12">
           <!-- Section - For you & Following Button -->
           <section
             id="forYouMenu"
@@ -76,7 +77,7 @@
 
           <!-- Section - Tweets -->
           <section
-            class="flex flex-col items-center self-stretch border-b border-neutral-700 relative"
+            class="flex flex-col items-center self-stretch border-b border-neutral-700 relative pb-16 "
           >
             <!-- Tweet 1 -->
             <section
@@ -733,33 +734,34 @@
 
             <!-- Copy to clipboard text -->
             <section
-              class="flex py-3 px-8 justify-center items-center gap-0.6-rem absolute bottom-2 left-16 border rounded-3xl bg-twitter-searchbar-fill"
+              class="flex py-2 px-6 justify-center items-center gap-0.6-rem fixed bottom-20 border rounded-3xl bg-twitter-searchbar-fill"
             >
               <span class="text-base font-normal">Copied to clipboard.</span>
             </section>
 
+      
 
           </section>
         </section>
 
-                    <!-- Section - Button -->
-                    
-                    <a href="../compose-tweet/index.html"
-                    class="flex p-4 items-start gap-0.6-rem rounded-full bg-twitter-blue-default shadow-md absolute bottom-20 right-5"
-                  >
-                    <img
-                      src="../../public/images/Add.svg"
-                      alt=""
-                      class="flex w-8 h-8 justify-center items-center"
-                    />
-                  </a>
-
+              <!-- Section - Button -->  
+              <a href="../compose-tweet/index.html"
+              class="flex p-4 items-start gap-0.6-rem rounded-full bg-twitter-blue-default shadow-md fixed bottom-20 right-[37%]"
+            >
+              <img
+                src="../../public/images/Add.svg"
+                alt=""
+                class="flex w-8 h-8 justify-center items-center"
+              />
+            </a>
+      
 
         <!-- Section - home / group button -->
-
         <section
-          class="flex py-5 px-6 justify-center items-center gap-10 border-t border-neutral-800 bg-black"
+          class="flex py-5 px-6 justify-center items-center gap-10 border-t border-neutral-800 bg-black fixed bottom-0 w-24-rem"
         >
+
+        <!-- flex py-3 px-4 items-center justify-stretch gap-32 bg-black border-b border-neutral-700 fixed w-24-rem -->
           <button class="flex justify-center items-center gap-4 p-1 group">
             <span
               class="text-base font-inter font-medium text-neutral-50 hover:text-neutral-400"
