@@ -612,6 +612,26 @@ video {
   top: 3.5rem;
 }
 
+.top-6 {
+  top: 1.5rem;
+}
+
+.top-6\.5rem {
+  top: 6.9rem;
+}
+
+.top-28 {
+  top: 7rem;
+}
+
+.top-20 {
+  top: 5rem;
+}
+
+.left-36 {
+  left: 9rem;
+}
+
 .z-50 {
   z-index: 50;
 }
@@ -650,6 +670,14 @@ video {
   margin-top: auto;
 }
 
+.mt-5 {
+  margin-top: 1.25rem;
+}
+
+.mt-8 {
+  margin-top: 2rem;
+}
+
 .flex {
   display: flex;
 }
@@ -672,6 +700,10 @@ video {
 
 .h-36 {
   height: 9rem;
+}
+
+.h-44 {
+  height: 11rem;
 }
 
 .h-8 {
@@ -806,14 +838,6 @@ video {
   justify-content: space-between;
 }
 
-.justify-around {
-  justify-content: space-around;
-}
-
-.justify-evenly {
-  justify-content: space-evenly;
-}
-
 .justify-stretch {
   justify-content: stretch;
 }
@@ -916,10 +940,6 @@ video {
   border-width: 4px;
 }
 
-.border-2 {
-  border-width: 2px;
-}
-
 .border-b {
   border-bottom-width: 1px;
 }
@@ -961,6 +981,10 @@ video {
   border-color: rgb(38 38 38 / var(--tw-border-opacity));
 }
 
+.border-twitter-blue-button-outline {
+  border-color: #1D9BF03D;
+}
+
 .border-twitter-blue-default {
   --tw-border-opacity: 1;
   border-color: rgb(29 155 240 / var(--tw-border-opacity));
@@ -971,8 +995,9 @@ video {
   border-color: rgb(84 106 122 / var(--tw-border-opacity));
 }
 
-.border-twitter-blue-button-outline {
-  border-color: #1D9BF03D;
+.border-neutral-900 {
+  --tw-border-opacity: 1;
+  border-color: rgb(23 23 23 / var(--tw-border-opacity));
 }
 
 .border-b-neutral-700 {
@@ -983,6 +1008,11 @@ video {
 .bg-black {
   --tw-bg-opacity: 1;
   background-color: rgb(0 0 0 / var(--tw-bg-opacity));
+}
+
+.bg-neutral-50 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(250 250 250 / var(--tw-bg-opacity));
 }
 
 .bg-neutral-700 {
@@ -1124,6 +1154,11 @@ video {
   padding-bottom: 1.25rem;
 }
 
+.py-8 {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
 .pb-0 {
   padding-bottom: 0px;
 }
@@ -1248,6 +1283,10 @@ video {
   caret-color: #1D9BF0;
 }
 
+.opacity-60 {
+  opacity: 0.6;
+}
+
 .shadow-md {
   --tw-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
   --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);
@@ -1318,6 +1357,10 @@ video {
 .focus-within\:outline-none:focus-within {
   outline: 2px solid transparent;
   outline-offset: 2px;
+}
+
+.hover\:cursor-pointer:hover {
+  cursor: pointer;
 }
 
 .hover\:border-b-2:hover {
