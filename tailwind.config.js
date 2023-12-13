@@ -23,6 +23,7 @@ module.exports = {
         "twitter-neutral-900": "#171717",
         "twitter-neutral-950": "#F9F9F9",
         "twitter-secondary": "#FFFFFF99",
+        "twitter-blue-button-outline":"#1D9BF03D",
       },
       fontSize: {
         "twitter-size-10px": "10",
